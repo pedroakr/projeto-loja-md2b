@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja | PLKR</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="p-3 mb-3 bg-color text-black">
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <a href="index.html" class="d-flex align-items-center mb-2 mb-lg-0 text-black text-decoration-none h4">
+                    PLKR
+                </a>
+
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0 ms-4">
+                    <li><a href="index.html" class="nav-link px-2 text-black">Todos</a></li>
+                    <li><a href="categoria.html?cat=Camisetas" class="nav-link px-2 text-black">Camisetas</a></li>
+                    <li><a href="categoria.html?cat=Calcas" class="nav-link px-2 text-black">Calças</a></li>
+                    <li><a href="categoria.html?cat=Calcados" class="nav-link px-2 text-black">Calçados</a></li>
+                    <li><a href="categoria.html?cat=Agasalhos" class="nav-link px-2 text-black">Agasalhos</a></li>
+                </ul>
+
+                <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search" id="form-pesquisa">
+                    <input type="search" id="input-pesquisa" class="form-control" placeholder="Buscar produtos" aria-label="Search">
+                </form>
+
+                <div class="dropdown text-end">
+                    <a href="#" class="bi bi-bag text-decoration-none text-secondary" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="badge bg-primary" id="cart-count">0</span>
+                    </a>
+                    <div class="dropdown-menu text-small" id="cart-dropdown" style="min-width: 300px;"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <h2 class="pb-2" id="page-title">Todos os Produtos</h2>
+
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4" id="product-list">
+        </div>
+    </main>
+
+    <footer class="py-3 my-4">
+        <p class="text-center text-muted">© 2025 PLKR</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="database/products.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

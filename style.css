@@ -1,0 +1,41 @@
+/* Altera a cor de fundo do cabeçalho */
+header { /* Usamos o seletor completo para garantir a prioridade */
+    background-color: #ffffff; /* Coloque a cor que desejar aqui */
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+}
+
+body {
+    background-color: rgb(235, 235, 235);
+}
+
+/*003380*/
+#cart-dropdown .dropdown-item-text {
+    white-space: normal;
+}
+
+#product-list .card-img-top {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+#product-list .card {
+    transition: transform .2s;
+}
+
+#product-list .card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.esgotado {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: rgb(215, 30, 50);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
